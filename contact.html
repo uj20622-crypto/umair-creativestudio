@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Umair Creative Studio</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230a0a0c%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 fill=%22%233b82f6%22 font-family=%22sans-serif%22 font-weight=%22800%22 text-anchor=%22middle%22>U</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">U</span><span>Umair<small>CREATIVE STUDIO</small></span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a href="contact.html" class="btn btn-primary btn-sm">Start a Project</a>
+      <button class="nav-burger" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" style="display:none;position:fixed;inset:0;background:#0a0a0c;z-index:100;flex-direction:column;padding:30px;">
+  <button class="mnav-close" style="align-self:flex-end;background:none;border:1px solid var(--line);color:#fff;border-radius:8px;padding:6px 10px;">✕</button>
+  <div style="display:flex;flex-direction:column;gap:20px;margin-top:40px;font-size:20px;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<section class="section-tight" style="padding-top:56px;">
+  <div class="container">
+    <div class="eyebrow">Get in Touch</div>
+    <h1 class="display-1">Let's start<br>your project.</h1>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="container contact-grid">
+    <div>
+      <h3 class="display-3" style="margin-bottom:24px;">Contact Details</h3>
+      <div class="contact-info-item">
+        <div class="ic">✉</div>
+        <div><h5>Email</h5><p><a href="mailto:uj@gmail.com">uj@gmail.com</a></p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ic">★</div>
+        <div><h5>Fiverr</h5><p>Available for A+ Content & design gigs on Fiverr</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="ic">⏱</div>
+        <div><h5>Response Time</h5><p>Usually replies within 24 hours</p></div>
+      </div>
+    </div>
+    <div>
+      <form onsubmit="event.preventDefault(); alert('Thanks! This form needs an email service (like Formspree) connected to actually send messages — ask Claude if you want this set up.');">
+        <div class="form-field">
+          <label>Your Name</label>
+          <input type="text" required>
+        </div>
+        <div class="form-field">
+          <label>Email Address</label>
+          <input type="email" required>
+        </div>
+        <div class="form-field">
+          <label>Project Type</label>
+          <select>
+            <option>YouTube Thumbnail</option>
+            <option>Amazon A+ Content</option>
+            <option>Logo & Brand Identity</option>
+            <option>Packaging Design</option>
+            <option>Social Media Design</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea required placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Umair Creative Studio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+document.querySelector('.nav-burger').addEventListener('click', ()=> document.querySelector('.mnav').style.display='flex');
+document.querySelector('.mnav-close').addEventListener('click', ()=> document.querySelector('.mnav').style.display='none');
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - file: "content/data.json"
+        label: "Site Content"
+        name: "data"
+        fields:
+          - { label: "Profile Photo", name: "profile_photo", widget: "image", hint: "Shown on the Home page and About page" }
+          - { label: "Your Name", name: "name", widget: "string" }
+          - { label: "Homepage Tagline", name: "tagline", widget: "string" }
+          - { label: "Short Bio", name: "bio", widget: "text" }
+          - { label: "Years of Experience", name: "years_experience", widget: "string" }
+          - { label: "Projects Delivered", name: "projects_delivered", widget: "string" }
+          - label: "Portfolio Items"
+            name: "portfolio"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "YouTube Thumbnail", value: "thumbnail" }
+                  - { label: "Amazon A+ Content", value: "aplus" }
+                  - { label: "Product Images", value: "product" }
+                  - { label: "Logo & Identity", value: "logo" }
+                  - { label: "Packaging", value: "packaging" }
+                  - { label: "Social Media", value: "social" }
+              - { label: "Image", name: "image", widget: "image" }

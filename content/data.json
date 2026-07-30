@@ -1,0 +1,15 @@
+{
+  "profile_photo": "/images/uploads/profile.png",
+  "name": "Muhammad Umair",
+  "tagline": "Design that stops the scroll. And starts the sale.",
+  "bio": "I'm a creative graphic designer helping YouTubers, Amazon sellers and growing brands turn attention into clicks, sales and subscribers — through thumbnails, A+ Content, and identity design that's built to convert.",
+  "years_experience": "3",
+  "projects_delivered": "50",
+  "portfolio": [
+    {
+      "title": "Add your first project",
+      "category": "thumbnail",
+      "image": "/images/uploads/profile.png"
+    }
+  ]
+}
